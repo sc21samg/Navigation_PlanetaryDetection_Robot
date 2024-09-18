@@ -16,15 +16,18 @@ Develop a robotic system capable of:
 ## Tasks Breakdown
 
 1. Navigation & Obstacle Avoidance
+ ![Alt text](https://github.com/sc21samg/Navigation_PlanetaryDetection_Robot/blob/main/1.1%20git.png)
 Input Coordinates: The robot navigates specific points within the spacecraft using input from a YAML file. It adapts dynamically to different environments.
 Wall Navigation: Uses LaserScan data and PID controllers for real-time wall-following and obstacle avoidance.
 Grid Navigation & Heuristics: The robot predicts window locations based on room layout heuristics for efficient exploration.
 2. Sign Detection
 Red and Green Sign Detection: Detects signs at entrances, using image processing to decide whether the robot should enter the room or bypass it.
 3. Window Detection & Image Stitching
+ ![Alt text](https://github.com/sc21samg/Navigation_PlanetaryDetection_Robot/blob/main/1.3%20git.png)
 Window Detection: Detects windows by identifying rectangular shapes with specific characteristics like a white border and black interiors.
 Screenshot Capture: Aligns the robot with the window, captures images, and stitches them to form a panorama of the environment.
 4. Planet Detection & Measurement
+ ![Alt text](https://github.com/sc21samg/Navigation_PlanetaryDetection_Robot/blob/main/1.4%20git.png)
 Planet Detection: Detects Earth, Moon, Mars, and Mercury within the captured panorama using a machine learning model.
 Distance Calculation: Measures distances between detected planets using pixel data and known planet diameters to determine the spacecraft's location.
 5. Machine Learning Model for Planet Detection
